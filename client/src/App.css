@@ -1,0 +1,43 @@
+.landing {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./assets/landing.jpg') center center/cover no-repeat;
+}
+.form {
+    width: 20rem;
+}
+.spinner-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-item {
+    display: grid;
+    gap: 15px;
+}
+.btn-floating {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .list-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .list-item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

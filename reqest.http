@@ -1,0 +1,51 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "new user1",
+    "password": "123"
+}
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "huuvien",
+    "password": "123"
+}
+
+###
+POST  http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGZlYmFkZTA1ODc4YjQ5Y2NhZTI4ZTQiLCJpYXQiOjE2Mjc1ODQ4MjR9.nBGVeiPwSWPTfbJSdBtTLmLlIdYuY4fV5rBTdHiCmLU
+
+
+{
+    "title": "Angular",
+    "description": "React",
+    "url": "angular.com",
+    "status": "LEARNED"
+}
+
+###
+GET   http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGZhMTc1ODgzNzA5NzM3ZWMyOGU0Y2YiLCJpYXQiOjE2MjcwMDYwNzZ9.nJiZrE5rmWN5PlSHvmMrBv_6xZZJM4PjjMec6g2543w
+
+
+###
+PUT   http://localhost:5000/api/posts/60fa204a3b68b7291cd08c1f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGZhMTc1ODgzNzA5NzM3ZWMyOGU0Y2YiLCJpYXQiOjE2MjcwMDYwNzZ9.nJiZrE5rmWN5PlSHvmMrBv_6xZZJM4PjjMec6g2543w
+
+{
+    "title": "my update",
+    "description": "",
+    "url": "nani",
+    "status": "LEARNING"
+}
+
+###
+DELETE   http://localhost:5000/api/posts/60fecf3d05878b49ccae291d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGZlYmFkZTA1ODc4YjQ5Y2NhZTI4ZTQiLCJpYXQiOjE2Mjc1ODYxNjV9.ERffqH6g-fREVsSHK2gsLScIZhBSaThJMzLCmtz4Ld4
+
